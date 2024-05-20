@@ -15,6 +15,7 @@ def  load_coco_dataset(dataset_dir):
 def load_yolo_dataset(dataset_dir,split):
     dataset = fo.Dataset.from_dir(dataset_type=fo.types.YOLOv5Dataset,dataset_dir= dataset_dir,yaml_path=f"{dataset_dir}/dataset.yaml",split=split)
     return dataset
+
 def arguments():
     parser=ArgumentParser(description="Visualize UDIT NN/CV project database")
     parser.add_argument("--path","--p",type=str,help="Path to the root folder of the database")
@@ -22,6 +23,7 @@ def arguments():
     parser.add_argument("--split","--s",required=False,type=str,choices=["train","val","test"],help="Format of the database")
     args=parser.parse_args()
     return args
+
 if __name__ == "__main__":
 
     args = arguments()
