@@ -55,12 +55,31 @@ In order to make use of the library, one should just follow the next steps:
   git clone <repo-url>
 ```
 
-2. Install the library with dependencies, preferably in a Python virtual environment (except for deployment):
+2. Create a virtual environment en la carpeta del repositorio:
+```bash
+  python -m .venv venv
+
+```
+
+3. Pincha en un fichero de python (.py) y comprueba abajo que aparece el entorno virtual activado, sino ejecuta el siguiente comando (solo windows)  :
+```bash
+  .\.venv\Scripts\Activate.ps1
+
+```
+
+4. Once the environment has been activated, install the library with dependencies, preferably in a Python virtual environment (except for deployment):
 ```bash
   pip install -r requirements.txt
 
 ```
 
+Extra commands:
+
+1. To check cuda version and graphics card:
+```bash
+  nvidia-smi
+
+```
 
 <p align="right"><a href="#top">Back to top</a></p>
 
