@@ -57,7 +57,7 @@ In order to make use of the library, one should just follow the next steps:
 
 2. Create a virtual environment en la carpeta del repositorio:
 ```bash
-  python -m .venv venv
+  python -m venv .venv
 
 ```
 
