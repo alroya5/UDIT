@@ -1,12 +1,12 @@
-import fiftyone as fo
 from argparse import ArgumentParser
+import fiftyone as fo
 
 def  load_coco_dataset(dataset_dir):
     # Load COCO formatted dataset
     coco_dataset = fo.Dataset.from_dir(
         dataset_type=fo.types.COCODetectionDataset,
-        data_path=f"{dataset_dir}/data",
-        labels_path=f"{dataset_dir}/labels.json",
+        data_path= f"{dataset_dir}/data",
+        labels_path= f"{dataset_dir}/labels.json",
         include_id=True,
     )
     coco_dataset.compute_metadata()

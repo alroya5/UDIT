@@ -1,5 +1,6 @@
-import fiftyone as fo
 from argparse import ArgumentParser
+
+import fiftyone as fo
 from ultralytics import YOLO
 import fiftyone.utils.ultralytics as fou
 

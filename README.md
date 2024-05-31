@@ -61,7 +61,7 @@ In order to make use of the library, one should just follow the next steps:
 
 ```
 
-3. Pincha en un fichero de python (.py) y comprueba abajo que aparece el entorno virtual activado, sino ejecuta el siguiente comando (solo windows)  :
+3.  Click on a python file (.py) and check below that the virtual environment is enabled, otherwise run the following command (windows only)  :
 ```bash
   .\.venv\Scripts\Activate.ps1
 
