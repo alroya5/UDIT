@@ -17,10 +17,10 @@ def load_yolo_dataset(dataset_dir,split):
     return dataset
 
 def arguments():
-    parser=ArgumentParser(description="Visualize UDIT NN/CV project database")
-    parser.add_argument("--path","--p",type=str,help="Path to the root folder of the database")
-    parser.add_argument("--format","--f",type=str,choices=["yolo","coco"],help="Format of the database")
-    parser.add_argument("--split","--s",required=False,type=str,choices=["train","val","test"],help="Format of the database")
+    parser=ArgumentParser(description="Visualize UDIT NN/CV project dataset")
+    parser.add_argument("--path","--p",type=str,help="Path to the root folder of the dataset")
+    parser.add_argument("--format","--f",type=str,choices=["yolo","coco"],help="Format of the dataset")
+    parser.add_argument("--split","--s",required=False,type=str,choices=["train","val","test"],help="Split of the dataset (only for YOLO format)")
     args=parser.parse_args()
     return args
 
