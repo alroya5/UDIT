@@ -368,15 +368,15 @@ if __name__ == "__main__":
     #    Example: If your JSON has "file_name": "image1.jpg" and the actual image is at E:\data\my_project\image1.jpg,
     #             then original_images_base_path should be r"E:\data\my_project".
     #    Based on your previous path:
-    original_images_base_path = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Desktop\Practica\train\data"
+    original_images_base_path = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Downloads\Alldata\dataset\data"
 
     # 2. Set the path to your single JSON annotation file.
     #    Based on your previous path:
-    annotation_json_path = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Desktop\Practica\train\labels.json" # <--- CHECK THIS PATH AND FILENAME
+    annotation_json_path = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Downloads\Alldata\dataset\labels.json" # <--- CHECK THIS PATH AND FILENAME
 
     # 3. Set the root directory where the 'train' and 'val' output folders will be created.
     #    This is the directory that will contain the 'train' and 'val' subfolders directly.
-    output_split_root = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Desktop\Practica\val"
+    output_split_root = r"C:\Users\Alumno.DESKTOP-GV16N45.000\Downloads\Alldata\output"
     # --- END OF REQUIRED CHANGES ---
 
     train_size = 0.8 # 80% for training, 20% for validation
